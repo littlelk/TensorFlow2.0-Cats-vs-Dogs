@@ -1,0 +1,4 @@
+.vscode
+logdir
+*.h5
+*.csv
