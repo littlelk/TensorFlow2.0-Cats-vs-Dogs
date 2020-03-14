@@ -76,8 +76,8 @@ class VGG16(tf.keras.Model):
         ])
         self.fc_block = tf.keras.Sequential([
             tf.keras.layers.Flatten(),
-            tf.keras.layers.Dense(512, activation='relu'),
-            tf.keras.layers.Dense(128, activation='relu'),
+            tf.keras.layers.Dense(4096, activation='relu'),
+            tf.keras.layers.Dense(4096, activation='relu'),
             tf.keras.layers.Dense(2, activation='sigmoid')
         ])
 

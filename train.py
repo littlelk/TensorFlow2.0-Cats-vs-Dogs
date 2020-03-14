@@ -34,7 +34,7 @@ parser.add_argument('--logdir',
                     default='logdir',
                     help='the path for logs')
 parser.add_argument('--checkpoint',
-                    default='AlexNet_checkpoint.h5',
+                    default='VGG16_checkpoint.h5',
                     help='the path for checkpoint')
 parser.add_argument('--image_size',
                     default=[224, 224],
@@ -88,7 +88,7 @@ def train():
 
 
 def predict():
-    model = AlexNet()
+    model = VGG16()
 
     model.build(input_shape=(None, 224, 224, 3))
 
